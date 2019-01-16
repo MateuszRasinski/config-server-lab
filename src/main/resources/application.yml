@@ -6,3 +6,12 @@ spring:
       server:
         git:
           uri: https://github.com/MateuszRasinski/config-repo-lab
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - bus-refresh
